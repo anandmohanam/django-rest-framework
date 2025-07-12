@@ -12,10 +12,16 @@ A RESTful API built using Django and Django REST Framework to manage products an
 - **Average product rating**
 - **Review edit/delete only by owner**
 - **Permissions based on user roles**
+- **POSTMAN COLLECTION**
+  [Postman Collection](postman_collection.json)
 
 ---
 
 ##  API Endpoints
+
+### Default
+- `Home`: Landing page with Bootstrap UI.
+[Home Page Screenshot](index.png)
 
 ### Auth
 - `POST /api/register/` — Register a new user
@@ -41,8 +47,8 @@ A RESTful API built using Django and Django REST Framework to manage products an
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/product-review-api.git
-cd product-review-api
+git clone gh repo clone anandmohanam/django-rest-framework
+cd django-rest-framework
 
 # Create virtual environment
 python -m venv env
