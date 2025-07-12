@@ -17,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"username\": \"user\",\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"user\"\r\n}\r\n",
+							"raw": "{\r\n  \"username\": \"user1\",\r\n  \"email\": \"user1@example.com\",\r\n  \"password\": \"user1\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -90,7 +90,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "token 3a80fd3f601f6efc1a2f12cdc8ed2da573c0cd15",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -161,7 +161,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token bf37690d506e021331c799ba0aa28f022e82652b",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -173,7 +173,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"item40\",\r\n  \"description\": \"item is good\",\r\n  \"price\": \"2000\"\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"item3400\",\r\n  \"description\": \"item is very good\",\r\n  \"price\": \"2000\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -216,7 +216,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token 5863eb9cb1fa16104af58c0c170cfdfb4b08537c",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -228,7 +228,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"item17\",\r\n  \"description\": \"item is very good\",\r\n  \"price\": \"700\"\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"item17new\",\r\n  \"description\": \"item is very good\",\r\n  \"price\": \"400\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -236,7 +236,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/3/",
+							"raw": "http://127.0.0.1:8000/api/products/11/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -248,7 +248,7 @@
 							"path": [
 								"api",
 								"products",
-								"3",
+								"11",
 								""
 							]
 						}
@@ -265,7 +265,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token bf37690d506e021331c799ba0aa28f022e82652b",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -277,7 +277,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"item7\",\r\n  \"description\": \"item is very good\",\r\n  \"price\": \"400\"\r\n}\r\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -285,7 +285,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/products/?id=1",
+							"raw": "http://127.0.0.1:8000/api/products/7/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -297,12 +297,14 @@
 							"path": [
 								"api",
 								"products",
+								"7",
 								""
 							],
 							"query": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "1",
+									"disabled": true
 								}
 							]
 						}
@@ -327,7 +329,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token bf37690d506e021331c799ba0aa28f022e82652b",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -385,8 +387,9 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token bf37690d506e021331c799ba0aa28f022e82652b",
-								"type": "text"
+								"value": "",
+								"type": "text",
+								"disabled": true
 							},
 							{
 								"key": "",
@@ -405,7 +408,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/reviews/",
+							"raw": "http://127.0.0.1:8000/api/reviews/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -417,7 +420,7 @@
 							"path": [
 								"api",
 								"reviews",
-								""
+								"2"
 							],
 							"query": [
 								{
@@ -440,7 +443,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token 5863eb9cb1fa16104af58c0c170cfdfb4b08537c",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -452,7 +455,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"product\": 1,\r\n  \"rating\": 5,\r\n  \"feedback\": \"This product is excellent!\"\r\n}\r\n",
+							"raw": "{\r\n  \"product\": 10,\r\n  \"rating\": 5,\r\n  \"feedback\": \"This product is excellent!\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -491,11 +494,11 @@
 						"auth": {
 							"type": "noauth"
 						},
-						"method": "POST",
+						"method": "PATCH",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Token 5863eb9cb1fa16104af58c0c170cfdfb4b08537c",
+								"value": "",
 								"type": "text"
 							},
 							{
@@ -507,7 +510,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"product\": 1,\r\n  \"rating\": 5,\r\n  \"feedback\": \"This product is excellent!\"\r\n}\r\n",
+							"raw": "{\r\n  \r\n  \"rating\": 4,\r\n  \"feedback\": \"This product is excellent!\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -515,7 +518,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/reviews/",
+							"raw": "http://127.0.0.1:8000/api/reviews/7/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -527,6 +530,7 @@
 							"path": [
 								"api",
 								"reviews",
+								"7",
 								""
 							],
 							"query": [

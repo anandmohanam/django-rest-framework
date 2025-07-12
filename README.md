@@ -47,7 +47,7 @@ A RESTful API built using Django and Django REST Framework to manage products an
 
 ```bash
 # Clone the repo
-git clone gh repo clone anandmohanam/django-rest-framework
+git clone https://github.com/anandmohanam/django-rest-framework.git
 cd django-rest-framework
 
 # Create virtual environment

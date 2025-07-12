@@ -41,11 +41,16 @@ class IsAdminOrReadOnly(permissions.BasePermission):
         return request.method in permissions.SAFE_METHODS or (
             request.user and request.user.is_authenticated and request.user.is_staff
         )
-
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     permission_classes = [IsAdminOrReadOnly]
+
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        product_id = instance.id
+        self.perform_destroy(instance)
+        return Response({"message": f"Product with id {product_id} has been deleted."}, status=status.HTTP_200_OK)
 
 class IsAuthenticatedRegularUser(permissions.BasePermission):
     def has_permission(self, request, view):
