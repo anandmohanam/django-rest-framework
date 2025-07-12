@@ -14,6 +14,7 @@ A RESTful API built using Django and Django REST Framework to manage products an
 - **Permissions based on user roles**
 - **POSTMAN COLLECTION**
   [Postman Collection](postman_collection.json)
+  Authorization:Token <token_key>
 
 ---
 
