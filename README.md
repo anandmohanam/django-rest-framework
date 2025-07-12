@@ -39,7 +39,7 @@ A RESTful API built using Django and Django REST Framework to manage products an
 ###  Reviews
 - `GET /api/reviews/` — List all reviews
 - `POST /api/reviews/` — Create (Authenticated user only, one per product)
-- `PUT /api/reviews/<id>/` — Update (Review owner only)
+- `PATCH /api/reviews/<id>/` — Update (Review owner only)
 - `DELETE /api/reviews/<id>/` — Delete (Review owner only)
 
 ---
