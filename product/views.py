@@ -67,6 +67,8 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+    
+    
 
 class ReviewViewSet(viewsets.ModelViewSet):
     queryset = Review.objects.all()
@@ -81,6 +83,12 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        review_id = instance.id
+        self.perform_destroy(instance)
+        return Response({"message": f"Review with id {review_id} has been deleted."}, status=status.HTTP_200_OK)
 
 class LogoutView(APIView):
     authentication_classes = [TokenAuthentication]
